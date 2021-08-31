@@ -5,7 +5,7 @@ WORKDIR /app
 COPY go.mod ./
 RUN go mod download
 
-COPY *.go ./
+COPY ./ ./
 RUN go build -o /tserver
 
 EXPOSE 8080
